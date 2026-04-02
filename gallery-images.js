@@ -1,0 +1,8 @@
+﻿window.__GALLERY_IMAGES__ = [
+    {
+        "src":  "./gallery/Group%20Photo%202022.jpg"
+    },
+    {
+        "src":  "./gallery/Group%20Photo%202026.jpg"
+    }
+];

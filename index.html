@@ -3,84 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siamak Nejati Lab Website</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at top, #e0f2fe, #0f172a);
-      color: #0f172a;
-    }
-
-    .card {
-      background: #f9fafb;
-      padding: 32px 28px;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
-      max-width: 480px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .lab-name {
-      font-size: 1.6rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-      color: #0f172a;
-    }
-
-    .tagline {
-      font-size: 0.95rem;
-      color: #4b5563;
-      margin-bottom: 20px;
-    }
-
-    .coming-soon {
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-      color: #1d4ed8;
-    }
-
-    .note {
-      font-size: 0.95rem;
-      color: #4b5563;
-    }
-
-    footer {
-      position: fixed;
-      bottom: 12px;
-      left: 0;
-      right: 0;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #e5e7eb;
-    }
-  </style>
+  <title>Nejati Lab</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site.css">
 </head>
-<body>
-  <main class="card">
-    <h1 class="lab-name">Siamak Nejati Lab Website</h1>
-    <p class="tagline">Research, innovation, and materials science.</p>
+<body class="home-page">
+  <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="./background.mp4" type="video/mp4">
+  </video>
+  <div class="background-overlay" aria-hidden="true"></div>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="./index.html">
+        <img class="brand-icon" src="./favicon.svg" alt="" aria-hidden="true">
+        <span>Nejati Lab</span>
+      </a>
 
-    <p class="coming-soon">The website is coming soon.</p>
-    <p class="note">
-      Please check back later for more information about the lab, projects, and team.
-    </p>
-  </main>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./team.html">Team</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./news.html">News</a>
+      </nav>
+    </header>
 
-  <footer>
-    © 2026 Siamak Nejati Lab
-  </footer>
+    <main>
+      <section class="section hero" id="home">
+        <div class="hero-shell">
+          <p class="eyebrow">Advanced materials for energy systems</p>
+          <h1 class="hero-word">NanoScience</h1>
+
+          <div class="hero-layout">
+            <div class="hero-tagline">
+              <p>Water. Materials. Separation. Energy.</p>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+              <div class="hero-visual-stage" data-schematic-stage>
+                <div class="hero-sputter" data-schematic-sputter>
+                  <span class="sputter-atom" style="--from-x: -244px; --from-y: -290px; --to-x: -106px; --to-y: -84px; --size: 11px; --particle: rgba(255, 216, 202, 0.9); --particle-glow: rgba(255, 216, 202, 0.58); --delay: 0ms; --duration: 1760ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -162px; --from-y: -308px; --to-x: -54px; --to-y: -102px; --size: 8px; --particle: rgba(245, 243, 255, 0.9); --particle-glow: rgba(245, 243, 255, 0.5); --delay: 90ms; --duration: 1820ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -42px; --from-y: -324px; --to-x: 8px; --to-y: -112px; --size: 9px; --particle: rgba(197, 217, 255, 0.9); --particle-glow: rgba(197, 217, 255, 0.56); --delay: 180ms; --duration: 1880ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 72px; --from-y: -316px; --to-x: 62px; --to-y: -92px; --size: 10px; --particle: rgba(255, 216, 202, 0.84); --particle-glow: rgba(255, 216, 202, 0.5); --delay: 270ms; --duration: 1840ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 196px; --from-y: -298px; --to-x: 118px; --to-y: -68px; --size: 12px; --particle: rgba(197, 217, 255, 0.92); --particle-glow: rgba(197, 217, 255, 0.58); --delay: 350ms; --duration: 1920ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 258px; --from-y: -196px; --to-x: 144px; --to-y: -24px; --size: 8px; --particle: rgba(245, 243, 255, 0.86); --particle-glow: rgba(245, 243, 255, 0.48); --delay: 450ms; --duration: 1680ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -286px; --from-y: -170px; --to-x: -148px; --to-y: -18px; --size: 9px; --particle: rgba(255, 216, 202, 0.88); --particle-glow: rgba(255, 216, 202, 0.52); --delay: 520ms; --duration: 1700ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -214px; --from-y: -250px; --to-x: -84px; --to-y: 18px; --size: 8px; --particle: rgba(197, 217, 255, 0.88); --particle-glow: rgba(197, 217, 255, 0.52); --delay: 610ms; --duration: 1780ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -92px; --from-y: -276px; --to-x: -26px; --to-y: 6px; --size: 10px; --particle: rgba(255, 216, 202, 0.9); --particle-glow: rgba(255, 216, 202, 0.56); --delay: 700ms; --duration: 1760ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 22px; --from-y: -304px; --to-x: 24px; --to-y: 24px; --size: 9px; --particle: rgba(245, 243, 255, 0.92); --particle-glow: rgba(245, 243, 255, 0.52); --delay: 790ms; --duration: 1840ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 132px; --from-y: -282px; --to-x: 78px; --to-y: 42px; --size: 8px; --particle: rgba(197, 217, 255, 0.9); --particle-glow: rgba(197, 217, 255, 0.56); --delay: 860ms; --duration: 1800ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 246px; --from-y: -210px; --to-x: 138px; --to-y: 64px; --size: 11px; --particle: rgba(255, 216, 202, 0.86); --particle-glow: rgba(255, 216, 202, 0.54); --delay: 950ms; --duration: 1720ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -256px; --from-y: -118px; --to-x: -174px; --to-y: -38px; --size: 7px; --particle: rgba(245, 243, 255, 0.88); --particle-glow: rgba(245, 243, 255, 0.46); --delay: 1080ms; --duration: 1600ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 284px; --from-y: -126px; --to-x: 176px; --to-y: 38px; --size: 7px; --particle: rgba(197, 217, 255, 0.9); --particle-glow: rgba(197, 217, 255, 0.5); --delay: 1150ms; --duration: 1640ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -18px; --from-y: -344px; --to-x: 12px; --to-y: -152px; --size: 10px; --particle: rgba(255, 216, 202, 0.88); --particle-glow: rgba(255, 216, 202, 0.56); --delay: 1240ms; --duration: 1860ms;"></span>
+                  <span class="sputter-atom" style="--from-x: -214px; --from-y: -286px; --to-x: -196px; --to-y: 12px; --size: 8px; --particle: rgba(197, 217, 255, 0.88); --particle-glow: rgba(197, 217, 255, 0.5); --delay: 1320ms; --duration: 1740ms;"></span>
+                  <span class="sputter-atom" style="--from-x: 228px; --from-y: -278px; --to-x: 194px; --to-y: 44px; --size: 9px; --particle: rgba(255, 216, 202, 0.84); --particle-glow: rgba(255, 216, 202, 0.48); --delay: 1400ms; --duration: 1780ms;"></span>
+                </div>
+
+                <div class="hero-burst" data-schematic-burst>
+                  <span class="burst-particle" style="--origin-x: -118px; --origin-y: -56px; --angle: 312deg; --distance: 136px; --size: 10px; --particle: rgba(255, 216, 202, 0.9); --particle-glow: rgba(255, 216, 202, 0.56); --delay: 0ms;"></span>
+                  <span class="burst-particle" style="--origin-x: -54px; --origin-y: -86px; --angle: 342deg; --distance: 124px; --size: 8px; --particle: rgba(245, 243, 255, 0.86); --particle-glow: rgba(245, 243, 255, 0.48); --delay: 24ms;"></span>
+                  <span class="burst-particle" style="--origin-x: 24px; --origin-y: -98px; --angle: 10deg; --distance: 142px; --size: 9px; --particle: rgba(197, 217, 255, 0.9); --particle-glow: rgba(197, 217, 255, 0.58); --delay: 36ms;"></span>
+                  <span class="burst-particle" style="--origin-x: 104px; --origin-y: -68px; --angle: 34deg; --distance: 148px; --size: 11px; --particle: rgba(255, 216, 202, 0.84); --particle-glow: rgba(255, 216, 202, 0.52); --delay: 48ms;"></span>
+                  <span class="burst-particle" style="--origin-x: 146px; --origin-y: -16px; --angle: 74deg; --distance: 132px; --size: 7px; --particle: rgba(197, 217, 255, 0.9); --particle-glow: rgba(197, 217, 255, 0.52); --delay: 60ms;"></span>
+                  <span class="burst-particle" style="--origin-x: 124px; --origin-y: 44px; --angle: 102deg; --distance: 126px; --size: 10px; --particle: rgba(245, 243, 255, 0.84); --particle-glow: rgba(245, 243, 255, 0.46); --delay: 72ms;"></span>
+                  <span class="burst-particle" style="--origin-x: 58px; --origin-y: 82px; --angle: 142deg; --distance: 138px; --size: 9px; --particle: rgba(255, 216, 202, 0.88); --particle-glow: rgba(255, 216, 202, 0.54); --delay: 88ms;"></span>
+                  <span class="burst-particle" style="--origin-x: -12px; --origin-y: 96px; --angle: 178deg; --distance: 126px; --size: 8px; --particle: rgba(197, 217, 255, 0.86); --particle-glow: rgba(197, 217, 255, 0.5); --delay: 100ms;"></span>
+                  <span class="burst-particle" style="--origin-x: -86px; --origin-y: 86px; --angle: 214deg; --distance: 142px; --size: 11px; --particle: rgba(255, 216, 202, 0.86); --particle-glow: rgba(255, 216, 202, 0.52); --delay: 114ms;"></span>
+                  <span class="burst-particle" style="--origin-x: -148px; --origin-y: 38px; --angle: 244deg; --distance: 132px; --size: 8px; --particle: rgba(197, 217, 255, 0.9); --particle-glow: rgba(197, 217, 255, 0.54); --delay: 126ms;"></span>
+                  <span class="burst-particle" style="--origin-x: -178px; --origin-y: -12px; --angle: 274deg; --distance: 124px; --size: 9px; --particle: rgba(245, 243, 255, 0.84); --particle-glow: rgba(245, 243, 255, 0.46); --delay: 138ms;"></span>
+                  <span class="burst-particle" style="--origin-x: -164px; --origin-y: -84px; --angle: 298deg; --distance: 144px; --size: 10px; --particle: rgba(255, 216, 202, 0.88); --particle-glow: rgba(255, 216, 202, 0.54); --delay: 152ms;"></span>
+                </div>
+
+                <div class="schematic-shape" data-schematic-shape>
+                  <svg viewBox="0 0 640 420" role="presentation">
+                    <defs>
+                      <linearGradient id="crystalRibbon" x1="16%" y1="80%" x2="88%" y2="18%">
+                        <stop offset="0%" stop-color="#ffd8ca" stop-opacity="0.96"></stop>
+                        <stop offset="48%" stop-color="#f7f3ff" stop-opacity="0.92"></stop>
+                        <stop offset="100%" stop-color="#c5d9ff" stop-opacity="0.96"></stop>
+                      </linearGradient>
+                      <linearGradient id="sheetWarm" x1="8%" y1="16%" x2="86%" y2="84%">
+                        <stop offset="0%" stop-color="#ffe2d5" stop-opacity="0.6"></stop>
+                        <stop offset="50%" stop-color="#f8f3ff" stop-opacity="0.28"></stop>
+                        <stop offset="100%" stop-color="#c5d9ff" stop-opacity="0.14"></stop>
+                      </linearGradient>
+                      <linearGradient id="sheetCool" x1="12%" y1="12%" x2="92%" y2="84%">
+                        <stop offset="0%" stop-color="#d9e5ff" stop-opacity="0.54"></stop>
+                        <stop offset="52%" stop-color="#f7f3ff" stop-opacity="0.22"></stop>
+                        <stop offset="100%" stop-color="#ffd8ca" stop-opacity="0.14"></stop>
+                      </linearGradient>
+                      <radialGradient id="peachNode" cx="38%" cy="35%" r="62%">
+                        <stop offset="0%" stop-color="#fffdfa" stop-opacity="0.98"></stop>
+                        <stop offset="45%" stop-color="#ffe2d5" stop-opacity="0.92"></stop>
+                        <stop offset="100%" stop-color="#ffd8ca" stop-opacity="0"></stop>
+                      </radialGradient>
+                      <radialGradient id="blueNode" cx="38%" cy="35%" r="62%">
+                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"></stop>
+                        <stop offset="45%" stop-color="#d9e5ff" stop-opacity="0.92"></stop>
+                        <stop offset="100%" stop-color="#c5d9ff" stop-opacity="0"></stop>
+                      </radialGradient>
+                      <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88"></stop>
+                        <stop offset="42%" stop-color="#f5ece9" stop-opacity="0.45"></stop>
+                        <stop offset="100%" stop-color="#0f0f12" stop-opacity="0"></stop>
+                      </radialGradient>
+                      <filter id="schematicGlow" x="-30%" y="-30%" width="160%" height="160%">
+                        <feGaussianBlur stdDeviation="12" result="blur"></feGaussianBlur>
+                        <feMerge>
+                          <feMergeNode in="blur"></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                      </filter>
+                      <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="4" result="blur"></feGaussianBlur>
+                        <feMerge>
+                          <feMergeNode in="blur"></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                      </filter>
+                    </defs>
+
+                    <g class="ambient-grid" opacity="0.18" stroke="#f1e9e6" stroke-width="2" fill="none">
+                      <path d="M82 144 L118 126 L154 144 L154 182 L118 200 L82 182 Z"></path>
+                      <path d="M154 144 L190 126 L226 144 L226 182 L190 200 L154 182 Z"></path>
+                      <path d="M468 160 L504 142 L540 160 L540 198 L504 216 L468 198 Z"></path>
+                      <path d="M504 216 L540 198 L576 216 L576 254 L540 272 L504 254 Z"></path>
+                    </g>
+
+                    <ellipse class="core-halo" cx="320" cy="214" rx="178" ry="116" fill="url(#coreGlow)"></ellipse>
+                    <ellipse class="field-ring" cx="320" cy="214" rx="210" ry="136" fill="none" stroke="url(#crystalRibbon)" stroke-opacity="0.2" stroke-width="2.2"></ellipse>
+
+                    <g class="beam-cluster" fill="none" stroke-linecap="round">
+                      <path class="beam beam--center" d="M320 36 C320 86 320 124 320 166" stroke="url(#crystalRibbon)" stroke-width="6"></path>
+                    </g>
+
+                    <g class="surface-cluster surface-cluster--back" filter="url(#schematicGlow)">
+                      <polygon class="surface-sheet surface-sheet--back" points="206 180 362 118 520 180 364 244" fill="url(#sheetCool)" stroke="url(#crystalRibbon)" stroke-width="3.5" stroke-opacity="0.64"></polygon>
+                      <g class="surface-lattice" fill="none" stroke="#f6efee" stroke-opacity="0.34" stroke-width="2.2" stroke-linecap="round">
+                        <path class="build-line" style="--delay: 1120ms; --path-length: 180;" d="M236 191 L392 128"></path>
+                        <path class="build-line" style="--delay: 1220ms; --path-length: 180;" d="M266 204 L422 141"></path>
+                        <path class="build-line" style="--delay: 1320ms; --path-length: 180;" d="M296 216 L452 154"></path>
+                        <path class="build-line" style="--delay: 1420ms; --path-length: 180;" d="M326 228 L482 166"></path>
+                        <path class="build-line" style="--delay: 1180ms; --path-length: 190;" d="M222 168 L380 230"></path>
+                        <path class="build-line" style="--delay: 1280ms; --path-length: 190;" d="M254 155 L410 218"></path>
+                        <path class="build-line" style="--delay: 1380ms; --path-length: 190;" d="M286 142 L440 204"></path>
+                        <path class="build-line" style="--delay: 1480ms; --path-length: 190;" d="M318 130 L470 192"></path>
+                      </g>
+                      <g class="surface-nodes" filter="url(#softGlow)">
+                        <circle class="surface-node" style="--delay: 1360ms;" cx="236" cy="191" r="10" fill="url(#peachNode)"></circle>
+                        <circle class="surface-node" style="--delay: 1440ms;" cx="296" cy="216" r="8" fill="url(#peachNode)"></circle>
+                        <circle class="surface-node" style="--delay: 1520ms;" cx="356" cy="194" r="9" fill="url(#coreGlow)"></circle>
+                        <circle class="surface-node" style="--delay: 1600ms;" cx="422" cy="141" r="10" fill="url(#blueNode)"></circle>
+                        <circle class="surface-node" style="--delay: 1680ms;" cx="482" cy="166" r="12" fill="url(#blueNode)"></circle>
+                      </g>
+                    </g>
+
+                    <g class="bridge-network" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+                      <path class="crystal-bridge" style="--delay: 1640ms; --path-length: 92;" d="M236 191 L182 254" stroke="url(#crystalRibbon)" stroke-width="2.6"></path>
+                      <path class="crystal-bridge" style="--delay: 1700ms; --path-length: 92;" d="M296 216 L242 278" stroke="url(#crystalRibbon)" stroke-width="2.6"></path>
+                      <path class="crystal-bridge" style="--delay: 1760ms; --path-length: 92;" d="M356 194 L302 256" stroke="url(#crystalRibbon)" stroke-width="2.6"></path>
+                      <path class="crystal-bridge" style="--delay: 1820ms; --path-length: 92;" d="M422 141 L368 204" stroke="url(#crystalRibbon)" stroke-width="2.6"></path>
+                      <path class="crystal-bridge" style="--delay: 1880ms; --path-length: 92;" d="M482 166 L428 228" stroke="url(#crystalRibbon)" stroke-width="2.6"></path>
+                    </g>
+
+                    <g class="surface-cluster surface-cluster--front" filter="url(#schematicGlow)">
+                      <polygon class="surface-sheet surface-sheet--front" points="152 242 308 180 466 242 310 306" fill="url(#sheetWarm)" stroke="url(#crystalRibbon)" stroke-width="3.5" stroke-opacity="0.68"></polygon>
+                      <g class="surface-lattice" fill="none" stroke="#f6efee" stroke-opacity="0.36" stroke-width="2.2" stroke-linecap="round">
+                        <path class="build-line" style="--delay: 1420ms; --path-length: 180;" d="M182 254 L338 192"></path>
+                        <path class="build-line" style="--delay: 1500ms; --path-length: 180;" d="M212 266 L368 204"></path>
+                        <path class="build-line" style="--delay: 1580ms; --path-length: 180;" d="M242 278 L398 216"></path>
+                        <path class="build-line" style="--delay: 1660ms; --path-length: 180;" d="M272 290 L428 228"></path>
+                        <path class="build-line" style="--delay: 1460ms; --path-length: 190;" d="M168 230 L326 292"></path>
+                        <path class="build-line" style="--delay: 1540ms; --path-length: 190;" d="M200 217 L356 280"></path>
+                        <path class="build-line" style="--delay: 1620ms; --path-length: 190;" d="M232 204 L386 266"></path>
+                        <path class="build-line" style="--delay: 1700ms; --path-length: 190;" d="M264 192 L416 254"></path>
+                      </g>
+                      <g class="surface-nodes" filter="url(#softGlow)">
+                        <circle class="surface-node" style="--delay: 1740ms;" cx="182" cy="254" r="11" fill="url(#peachNode)"></circle>
+                        <circle class="surface-node" style="--delay: 1820ms;" cx="242" cy="278" r="9" fill="url(#peachNode)"></circle>
+                        <circle class="surface-node" style="--delay: 1900ms;" cx="302" cy="256" r="10" fill="url(#coreGlow)"></circle>
+                        <circle class="surface-node" style="--delay: 1980ms;" cx="368" cy="280" r="9" fill="url(#blueNode)"></circle>
+                        <circle class="surface-node" style="--delay: 2060ms;" cx="428" cy="228" r="11" fill="url(#blueNode)"></circle>
+                      </g>
+                    </g>
+
+                    <g class="molecule-accent molecule-accent--left" filter="url(#softGlow)" fill="none" stroke="#efe7e5" stroke-opacity="0.42" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M96 170 L128 146 L160 160"></path>
+                      <path d="M128 146 L136 112"></path>
+                      <circle cx="96" cy="170" r="10" fill="url(#peachNode)" stroke="none"></circle>
+                      <circle cx="128" cy="146" r="7" fill="url(#coreGlow)" stroke="none"></circle>
+                      <circle cx="160" cy="160" r="12" fill="url(#blueNode)" stroke="none"></circle>
+                      <circle cx="136" cy="112" r="9" fill="url(#peachNode)" stroke="none"></circle>
+                    </g>
+
+                    <g class="molecule-accent molecule-accent--top" filter="url(#softGlow)" fill="none" stroke="#efe7e5" stroke-opacity="0.38" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M286 116 L320 98 L356 110"></path>
+                      <path d="M320 98 L332 68"></path>
+                      <circle cx="286" cy="116" r="8" fill="url(#peachNode)" stroke="none"></circle>
+                      <circle cx="320" cy="98" r="6" fill="url(#coreGlow)" stroke="none"></circle>
+                      <circle cx="356" cy="110" r="9" fill="url(#blueNode)" stroke="none"></circle>
+                      <circle cx="332" cy="68" r="8" fill="url(#peachNode)" stroke="none"></circle>
+                    </g>
+
+                    <g class="molecule-accent molecule-accent--right" filter="url(#softGlow)" fill="none" stroke="#efe7e5" stroke-opacity="0.42" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M506 246 L538 226 L568 244"></path>
+                      <path d="M538 226 L550 192"></path>
+                      <circle cx="506" cy="246" r="10" fill="url(#blueNode)" stroke="none"></circle>
+                      <circle cx="538" cy="226" r="7" fill="url(#coreGlow)" stroke="none"></circle>
+                      <circle cx="568" cy="244" r="12" fill="url(#peachNode)" stroke="none"></circle>
+                      <circle cx="550" cy="192" r="9" fill="url(#blueNode)" stroke="none"></circle>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-sidecopy">
+            <p>Our research group focuses on the rational design and fabrication of advanced materials and thin films to precisely control how molecules, ions, and fluids move and interact at small scales. We are driven by a fundamental curiosity about how nanoscale structure and interfacial chemistry govern the macroscopic performance of materials in real-world systems.
+
+At the core of our work is the belief that establishing clear structure-property relationships is the key to developing technologies that are more efficient, durable, and scalable. By combining synthesis, characterization, and computational modeling, we aim to translate foundational insights into practical platforms that address pressing challenges in environmental and energy applications.</p>
+            <form class="hero-form">
+              <input type="email" placeholder="Enter email address" aria-label="Email address" autocomplete="email">
+              <button type="submit">Email the Lab</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <a class="corner-logo" href="./index.html" aria-label="Nejati Lab home">
+    <img src="./logo.svg" alt="Nejati Lab logo">
+  </a>
+  <script src="./site.js"></script>
 </body>
 </html>

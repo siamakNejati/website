@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nejati Lab | Gallery</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body class="content-page gallery-page">
+  <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="./background.mp4" type="video/mp4">
+  </video>
+  <div class="background-overlay" aria-hidden="true"></div>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="./index.html">
+        <img class="brand-icon" src="./favicon.svg" alt="" aria-hidden="true">
+        <span>Nejati Lab</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./team.html">Team</a>
+        <a href="./publications.html">Publications</a>
+        <a href="./gallery.html" aria-current="page">Gallery</a>
+        <a href="./news.html">News</a>
+      </nav>
+    </header>
+
+    <main class="content-main">
+      <section class="content-shell">
+        <header class="page-intro">
+          <p class="page-kicker">Gallery</p>
+        </header>
+
+        <p class="sr-only" data-gallery-status aria-live="polite"></p>
+        <div class="content-grid gallery-grid" data-gallery-grid></div>
+      </section>
+    </main>
+  </div>
+  <a class="corner-logo" href="./index.html" aria-label="Nejati Lab home">
+    <img src="./logo.svg" alt="Nejati Lab logo">
+  </a>
+  <script src="./site.js"></script>
+  <script src="./gallery-images.js"></script>
+  <script src="./gallery.js"></script>
+</body>
+</html>
