@@ -2238,6 +2238,25 @@ main {
 }
 
 @media (max-width: 640px) {
+  .site-header {
+    position: relative;
+    z-index: 6;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+  }
+
+  .site-nav {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+  }
+
+  .brand span {
+    display: block;
+  }
+
   .corner-logo {
     position: relative;
     left: auto;
