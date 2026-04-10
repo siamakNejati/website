@@ -32,6 +32,7 @@
     {
       name: "Hamidreza Mohajeri Khorasani",
       src: "./Team%20Headshots/Hamidreza%20Mohajeri%20Khorasani.png",
+      linkedin: "https://www.linkedin.com/in/hamidreza-mohajeri-6313201a8/",
       scholar: "https://scholar.google.com/citations?user=ryxyO4wAAAAJ&hl=en&oi=ao"
     },
     { name: "Hariri Sree Sharavanan", src: "./Team%20Headshots/Hariri%20Sree%20Sharavanan.png" },
