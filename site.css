@@ -2241,16 +2241,20 @@ main {
   .site-header {
     position: relative;
     z-index: 6;
+    flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .brand {
-    flex: 0 0 auto;
+    flex: 0 0 100%;
   }
 
   .site-nav {
     position: relative;
     z-index: 1;
-    flex: 1 1 auto;
+    flex: 1 1 100%;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .brand span {
