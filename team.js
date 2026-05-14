@@ -20,13 +20,12 @@
       linkedin: "https://www.linkedin.com/in/ahmed-el-harairy-6411a4189/",
       scholar: "https://scholar.google.com/citations?hl=en&user=lV7vjy4AAAAJ"
     },
+    { name: "Amany Gomaa", src: "./Team%20Headshots/Amany%20Gomaa.png" },
     {
       name: "Anita Saakyan",
       src: "./Team%20Headshots/Anita%20Saakyan.png",
       linkedin: "https://www.linkedin.com/in/anita-saakyan-542785386/"
     },
-    { name: "Brianna Ryan", src: "./Team%20Headshots/Brianna%20Ryan.png" },
-    { name: "Bruce Baker", src: "./Team%20Headshots/Bruce%20Baker.png" },
     { name: "Coby Zach", src: "./Team%20Headshots/Coby%20Zach.png" },
     { name: "Danielle Cutsor", src: "./Team%20Headshots/Danielle%20Cutsor.png" },
     {
@@ -53,7 +52,7 @@
       src: "./Team%20Headshots/Parvez%20Amin%20Khan.png",
       linkedin: "https://www.linkedin.com/in/parvez-amin-khan-75057b5b/"
     },
-    { name: "Sam Peterson", src: "./Team%20Headshots/Sam%20Peterson.png" },
+    { name: "Sahar Beigzadeh", src: "./Team%20Headshots/Sahar%20Beigzadeh.png" },
     {
       name: "Shadi Motamed",
       src: "./Team%20Headshots/Shadi%20Motamed.png",
