@@ -155,6 +155,49 @@
 })();
 
 (() => {
+  const triggers = document.querySelectorAll("[data-download-open]");
+  if (!triggers.length) return;
+
+  const downloadUrl = "https://github.com/siamakNejati/website/releases/download/v0.9.1/Nejatisizer_Setup_0.9.1_x64.exe";
+  const dialog = document.createElement("dialog");
+  dialog.className = "download-dialog";
+  dialog.innerHTML = `
+    <form class="download-form">
+      <button class="download-close" type="button" aria-label="Close download dialog">&times;</button>
+      <p class="download-kicker">Nejatisizer</p>
+      <h2>Download Nejatisizer</h2>
+      <p>Windows installer, version 0.9.1</p>
+      <label for="download-name">Name</label>
+      <input id="download-name" name="name" autocomplete="name" required>
+      <label for="download-email">Email</label>
+      <input id="download-email" name="email" type="email" autocomplete="email" required>
+      <p class="download-privacy">Your details are only used to unlock this download. They are not saved or sent.</p>
+      <button class="download-submit" type="submit">Download installer</button>
+    </form>`;
+  document.body.append(dialog);
+
+  triggers.forEach((trigger) => trigger.addEventListener("click", () => {
+    trigger.closest("details")?.removeAttribute("open");
+    dialog.showModal();
+    dialog.querySelector("#download-name").focus();
+  }));
+  dialog.querySelector(".download-close").addEventListener("click", () => dialog.close());
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const link = document.createElement("a");
+    link.href = downloadUrl;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    dialog.close();
+    dialog.querySelector("form").reset();
+  });
+})();
+
+(() => {
   const heroForm = document.querySelector(".hero-form");
   const emailInput = heroForm?.querySelector('input[type="email"]');
 
