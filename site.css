@@ -279,7 +279,6 @@ img {
   padding: 10px clamp(10px, 1.1vw, 15px); font-size: clamp(0.58rem, 0.72vw, 0.74rem);
   letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap;
 }
-.nav-downloads summary::after { content: "⌄"; font-size: 1rem; line-height: 0; }
 .nav-downloads summary:hover, .nav-downloads summary:focus-visible { color: var(--text); border-color: rgba(255,255,255,.24); }
 .nav-downloads-menu {
   position: absolute; top: calc(100% + 8px); right: 0; z-index: 20;
