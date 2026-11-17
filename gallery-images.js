@@ -1,5 +1,41 @@
 ﻿window.__GALLERY_IMAGES__ = [
     {
+        "src": "./gallery/AIChE%202026%20-%2001%20Oral%20presentation.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2002%20Annual%20meeting.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2003%20Poster%20session.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2004%20Poster%20session.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2005%20Poster%20session.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2006%20Poster%20session.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2007%20Poster%20session.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2008%20Poster%20session.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
+        "src": "./gallery/AIChE%202026%20-%2009%20Research%20discussion.jpeg",
+        "group": "AIChE 2026"
+    },
+    {
         "src": "./gallery/AVS%202026%20-%20Arham%20and%20Hamid.jpeg",
         "group": "AVS 2026 - Arham and Hamid"
     },
