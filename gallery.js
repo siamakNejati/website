@@ -45,6 +45,7 @@
       return {
         fileName,
         rawName,
+        group: toText(image.group),
         src
       };
     })
@@ -52,6 +53,7 @@
     .map((image) => ({
       fileName: image.fileName,
       name: toImageTitle(image.fileName),
+      group: image.group,
       src: image.src
     }));
 
@@ -154,7 +156,7 @@
     const media = document.createElement("button");
     const picture = document.createElement("img");
     const body = document.createElement("div");
-    const title = document.createElement("h2");
+    const title = document.createElement("h3");
 
     card.className = "content-card gallery-card";
     media.className = "content-card-media gallery-card-trigger";
@@ -185,7 +187,7 @@
   };
 
   const renderImages = (images) => {
-    const signature = images.map((image) => [image.fileName, image.name, image.src].join("~")).join("|");
+    const signature = images.map((image) => [image.fileName, image.name, image.src, image.group].join("~")).join("|");
 
     if (signature === lastSignature) {
       return;
@@ -204,9 +206,25 @@
     }
 
     const fragment = document.createDocumentFragment();
+    const groups = new Map();
 
     images.forEach((image, index) => {
-      fragment.appendChild(createImageCard(image, index));
+      const groupName = image.group || "More From the Lab";
+      if (!groups.has(groupName)) {
+        const section = document.createElement("section");
+        const heading = document.createElement("h2");
+        const photos = document.createElement("div");
+        section.className = "gallery-collection";
+        heading.className = "gallery-collection-title";
+        heading.id = "gallery-collection-" + groups.size;
+        heading.textContent = groupName;
+        section.setAttribute("aria-labelledby", heading.id);
+        photos.className = "content-grid gallery-grid";
+        section.append(heading, photos);
+        fragment.appendChild(section);
+        groups.set(groupName, photos);
+      }
+      groups.get(groupName).appendChild(createImageCard(image, index));
     });
 
     grid.replaceChildren(fragment);
